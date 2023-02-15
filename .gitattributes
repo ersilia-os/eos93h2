@@ -1,1 +1,11 @@
 mock.csv filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/5HT1A.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/5HT2A.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/CNR2.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/DRD3.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/OPRM.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/AA1R.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/AA2AR.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/AA3R.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/DRD2.pth filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/HRH3.pth filter=lfs diff=lfs merge=lfs -text
