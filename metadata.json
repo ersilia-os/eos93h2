@@ -3,20 +3,18 @@
     "Slug": "image-mol-gpcr",
     "Status": "In progress",
     "Title": "imagemol-gpcr",
-    "Description": "Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. The is a regression model and will be fine tuned on top 10 GPCR datasets with the largest number of reported ligands from Chembel datasets.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.",
+    "Task": ["Regression"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Score"],
+    "Output Type": ["Float"],
+    "Output Shape": "Single",
+    "Interpretation": "Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM",
     "Tag": [
-        "GPCR",
-        "regression"
+        "Target identification"
     ],
     "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
     "Source Code": "https://github.com/HongxinXiang/ImageMol",
-    "License": "MIT License"
+    "License": "MIT"
 }
