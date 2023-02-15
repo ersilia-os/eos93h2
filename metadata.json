@@ -13,7 +13,8 @@
     "Output Shape": "Single",
     "Interpretation": "Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM",
     "Tag": [
-        "Target identification"
+        "Target identification",
+        "GPCR"
     ],
     "Publication": "https://www.nature.com/articles/s42256-022-00557-6",
     "Source Code": "https://github.com/HongxinXiang/ImageMol",
