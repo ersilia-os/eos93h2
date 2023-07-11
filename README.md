@@ -15,13 +15,18 @@ ImageMol is a Representation Learning Framework that utilizes molecule images fo
 * Output: `Score`
 * Output Type: `Float`
 * Output Shape: `Single`
-* Interpretation: Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM. Surface-binding Efficiency Index (SEI = (pKi, pKd, or pIC50) / (PSA/100 Å)) is used as a measure of binding activity in these assays. 
+* Interpretation: Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM
 
 ## References
 
 * [Publication](https://www.nature.com/articles/s42256-022-00557-6)
 * [Source Code](https://github.com/HongxinXiang/ImageMol)
 * Ersilia contributor: [DhanshreeA](https://github.com/DhanshreeA)
+
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos93h2)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos93h2) (AMD64)
 
 ## Citation
 
