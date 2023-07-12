@@ -1,7 +1,7 @@
 {
     "Identifier": "eos93h2",
     "Slug": "image-mol-gpcr",
-    "Status": "In progress",
+    "Status": "Ready",
     "Title": "imagemol-gpcr",
     "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.",
     "Mode": "Pretrained",
