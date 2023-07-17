@@ -66,6 +66,11 @@ with open(input_file, "r") as f:
 # run _model
 outputs = get_predictions(smiles_list)
 
+##ensure the input and the output are the same
+input_len = len(smiles_list)
+output_len = len(outputs)
+assert input_len == output_len
+
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
