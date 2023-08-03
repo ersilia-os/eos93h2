@@ -89,8 +89,10 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
+                ##Change the key to gpcr_assays array in the framework/code/main.py when you add more .pth files in the checkpoints folder.
+                #  The array is generated from the names of the .pth file in the checkpoints folder.
                 R += [
-                    {"outcome": [Float(x) for x in r]}
+                    {"['DRD3', '5HT2A', 'OPRM', '5HT1A', 'AA1R', 'DRD2', 'AA3R', 'CNR2', 'HRH3', 'AA2AR']": [Float(x) for x in r]}
                 ]  # <-- EDIT: Modify according to type of output (Float, String...)
         meta = {"outcome": h}
         result = {"result": R, "meta": meta}
