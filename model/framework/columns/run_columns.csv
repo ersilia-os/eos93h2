@@ -1,0 +1,11 @@
+name,type,direction,description
+CNR2,float,high,Ligand binding prediction to CNR2
+HRH3,float,high,Ligand binding prediction to HRH3
+5HT1A,float,high,Ligand binding prediction to 5HT1A
+DRD3,float,high,Ligand binding prediction to DRD3
+AA3R,float,high,Ligand binding prediction to AAR3
+DRD2,float,high,Ligand binding prediction to DRD2
+AA1R,float,high,Ligand binding prediction to AA1R
+OPRM,float,high,Ligand binding prediction to OPRM
+AA2AR,float,high,Ligand binding prediction to AA2AR
+5HT2A,float,high,Ligand binding prediction to 5HT2A
