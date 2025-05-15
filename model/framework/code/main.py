@@ -25,9 +25,10 @@ input_len = len(smiles_list)
 output_len = len(outputs)
 assert input_len == output_len
 
+cols= [c.lower() for c in gpcr_assays]
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(gpcr_assays)  # header
+    writer.writerow(cols)  # header
     for o in outputs:
         writer.writerow(o)
