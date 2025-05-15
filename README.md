@@ -2,44 +2,87 @@
 
 ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.
 
-## Identifiers
+This model was incorporated on 2023-01-25.
 
-* EOS model ID: `eos93h2`
-* Slug: `image-mol-gpcr`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos93h2`
+- **Slug:** `image-mol-gpcr`
 
-## Characteristics
+### Domain
+- **Task:** `Representation`
+- **Subtask:** `Featurization`
+- **Biomedical Area:** `Any`
+- **Target Organism:** `Homo sapiens`
+- **Tags:** `Target identification`, `GPCR`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Regression`
-* Output: `Score`
-* Output Type: `Float`
-* Output Shape: `Single`
-* Interpretation: Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `10`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM
 
-* [Publication](https://www.nature.com/articles/s42256-022-00557-6)
-* [Source Code](https://github.com/HongxinXiang/ImageMol)
-* Ersilia contributor: [DhanshreeA](https://github.com/DhanshreeA)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| cnr2 | float | high | Ligand binding prediction to CNR2 |
+| hrh3 | float | high | Ligand binding prediction to HRH3 |
+| 5ht1a | float | high | Ligand binding prediction to 5HT1A |
+| drd3 | float | high | Ligand binding prediction to DRD3 |
+| aa3r | float | high | Ligand binding prediction to AAR3 |
+| drd2 | float | high | Ligand binding prediction to DRD2 |
+| aa1r | float | high | Ligand binding prediction to AA1R |
+| oprm | float | high | Ligand binding prediction to OPRM |
+| aa2ar | float | high | Ligand binding prediction to AA2AR |
+| 5ht2a | float | high | Ligand binding prediction to 5HT2A |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos93h2)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos93h2) (AMD64)
 
-## Citation
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos93h2](https://hub.docker.com/r/ersiliaos/eos93h2)
+- **Docker Architecture:** `AMD64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip)
 
-If you use this model, please cite the [original authors](https://www.nature.com/articles/s42256-022-00557-6) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+### Resource Consumption
 
-## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a MIT license.
+### References
+- **Source Code**: [https://github.com/HongxinXiang/ImageMol](https://github.com/HongxinXiang/ImageMol)
+- **Publication**: [https://www.nature.com/articles/s42256-022-00557-6](https://www.nature.com/articles/s42256-022-00557-6)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2022`
+- **Ersilia Contributor:** [DhanshreeA](https://github.com/DhanshreeA)
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [MIT](LICENSE) license.
 
-## About Us
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos93h2
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos93h2
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
+
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
