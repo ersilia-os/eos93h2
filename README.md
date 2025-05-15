@@ -28,16 +28,16 @@ This model was incorporated on 2023-01-25.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| cnr2 | float | high | Ligand binding prediction to CNR2 |
-| hrh3 | float | high | Ligand binding prediction to HRH3 |
 | 5ht1a | float | high | Ligand binding prediction to 5HT1A |
-| drd3 | float | high | Ligand binding prediction to DRD3 |
-| aa3r | float | high | Ligand binding prediction to AAR3 |
-| drd2 | float | high | Ligand binding prediction to DRD2 |
-| aa1r | float | high | Ligand binding prediction to AA1R |
-| oprm | float | high | Ligand binding prediction to OPRM |
-| aa2ar | float | high | Ligand binding prediction to AA2AR |
 | 5ht2a | float | high | Ligand binding prediction to 5HT2A |
+| aa1r | float | high | Ligand binding prediction to AA1R |
+| aa2ar | float | high | Ligand binding prediction to AA2AR |
+| aa3r | float | high | Ligand binding prediction to AAR3 |
+| cnr2 | float | high | Ligand binding prediction to CNR2 |
+| drd2 | float | high | Ligand binding prediction to DRD2 |
+| drd3 | float | high | Ligand binding prediction to DRD3 |
+| hrh3 | float | high | Ligand binding prediction to HRH3 |
+| oprm | float | high | Ligand binding prediction to OPRM |
 
 
 ### Source and Deployment
