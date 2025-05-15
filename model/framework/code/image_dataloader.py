@@ -16,7 +16,7 @@ import torchvision.transforms as transforms
 
 root = os.path.dirname(os.path.abspath(__file__))
 checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
-ckpts = glob.glob(f"{checkpoints_dir}/*.pth")
+ckpts = sorted(glob.glob(f"{checkpoints_dir}/*.pth"))
 gpcr_assays = [os.path.split(pt)[-1].split(".")[0] for pt in ckpts]
 
 
