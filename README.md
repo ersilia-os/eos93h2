@@ -44,13 +44,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos93h2](https://hub.docker.com/r/ersiliaos/eos93h2)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `428`
 - **Environment Size (Mb):** `1203`
+- **Image Size (Mb):** `2424.83`
 
+**Computational Performance (seconds):**
+- 10 inputs: `36.88`
+- 100 inputs: `106.33`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/HongxinXiang/ImageMol](https://github.com/HongxinXiang/ImageMol)
