@@ -16,7 +16,7 @@
     ],
     "Input Dimension": 1,
     "Output": [
-        "Experimental value"
+        "Value"
     ],
     "Output Dimension": 10,
     "Output Consistency": "Fixed",
