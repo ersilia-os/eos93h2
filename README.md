@@ -2,8 +2,7 @@
 
 ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.
 
-This model was incorporated on 2023-01-25.
-
+This model was incorporated on 2023-01-25.Last packaged on 2025-10-16.
 
 ## Information
 ### Identifiers
@@ -51,12 +50,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `428`
 - **Environment Size (Mb):** `1217`
-- **Image Size (Mb):** `2424.83`
+- **Image Size (Mb):** `2442.05`
 
 **Computational Performance (seconds):**
-- 10 inputs: `36.88`
-- 100 inputs: `106.33`
-- 10000 inputs: `-1`
+- 10 inputs: `29.98`
+- 100 inputs: `46.61`
+- 10000 inputs: `1531.23`
 
 ### References
 - **Source Code**: [https://github.com/HongxinXiang/ImageMol](https://github.com/HongxinXiang/ImageMol)
