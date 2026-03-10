@@ -2,7 +2,7 @@
 
 ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.
 
-This model was incorporated on 2023-01-25.Last packaged on 2025-10-16.
+This model was incorporated on 2023-01-25.Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -44,18 +44,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos93h2](https://hub.docker.com/r/ersiliaos/eos93h2)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos93h2.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `428`
 - **Environment Size (Mb):** `1200`
-- **Image Size (Mb):** `2442.05`
+- **Image Size (Mb):** `2444.59`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.98`
-- 100 inputs: `46.61`
-- 10000 inputs: `1531.23`
+- 10 inputs: `31.71`
+- 100 inputs: `50.67`
+- 10000 inputs: `1579.04`
 
 ### References
 - **Source Code**: [https://github.com/HongxinXiang/ImageMol](https://github.com/HongxinXiang/ImageMol)
