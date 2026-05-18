@@ -59,7 +59,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/HongxinXiang/ImageMol](https://github.com/HongxinXiang/ImageMol)
-- **Publication**: [https://www.nature.com/articles/s42256-022-00557-6](https://www.nature.com/articles/s42256-022-00557-6)
+- **Publication**: [https://doi.org/10.1038/s42256-022-00557-6](https://doi.org/10.1038/s42256-022-00557-6)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2022`
 - **Ersilia Contributor:** [DhanshreeA](https://github.com/DhanshreeA)
