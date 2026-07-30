@@ -9,8 +9,8 @@
     ],
     "Source": "Local",
     "Source Type": "External",
-    "Task": "Representation",
-    "Subtask": "Featurization",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
