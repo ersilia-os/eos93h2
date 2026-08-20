@@ -3,7 +3,7 @@
     "Slug": "image-mol-gpcr",
     "Status": "Ready",
     "Title": "ImageMol GPCR ligand binding affinity",
-    "Description": "Predicts ligand binding across ten G protein-coupled receptors selected for having the largest sets of reported ligands in ChEMBL, among them serotonin, adenosine, dopamine and opioid receptors. Each target is modelled as a separate regression. Representations come from ImageMol, which learns from rendered images of chemical structures and was pretrained on 10 million unlabelled bioactive molecules before task-specific fine-tuning. Coverage mirrors the ligand bias of heavily studied receptors in public bioactivity data.",
+    "Description": "ImageMol is a Representation Learning Framework that utilizes molecule images for encoding molecular inputs as machine readable vectors for downstream tasks such as bio-activity prediction, drug metabolism analysis, or drug toxicity prediction. The approach utilizes transfer learning, that is, pre-training the model on massive unlabeled datasets to help it in generalizing feature extraction and then fine tuning on specific tasks. This model is fine tuned on 10 GPCR assays with the largest number of reported ligands from ChEMBL datasets.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 10,
     "Output Consistency": "Fixed",
-    "Interpretation": "Predicted binding affinity on a pKi-like scale across ten GPCR targets, higher values indicating stronger binding.",
+    "Interpretation": "Binding activity prediction (as a regression task) for the following GPCR assays: 5HT1A, 5HT2A, AA1R, AA2AR, AA3R, CNR2, DRD2, DRD3, HRH3, OPRM",
     "Tag": [
         "Target identification",
         "GPCR"
