@@ -1,6 +1,6 @@
 # ImageMol GPCR ligand binding affinity
 
-Predicts ligand binding across ten G protein-coupled receptors selected for having the largest sets of reported ligands in ChEMBL, among them serotonin, adenosine, dopamine and opioid receptors. Each target is modelled as a separate regression. Representations come from ImageMol, which learns from rendered images of chemical structures and was pretrained on 10 million unlabelled bioactive molecules before task-specific fine-tuning. Coverage mirrors the ligand bias of heavily studied receptors in public bioactivity data.
+Scores a molecule against ten G protein-coupled receptors chosen for having the largest ligand sets reported in ChEMBL, covering serotonin, adenosine, dopamine, cannabinoid, histamine and opioid targets, each modelled as a separate regression rather than a classification. The encoder is ImageMol, which learns from rendered pictures of chemical structures and was pretrained on ten million unlabelled molecules. Ersilia carried out the per-receptor fine-tuning, since the authors published the ChEMBL benchmark but not these weights. Coverage mirrors the ligand bias of heavily studied receptors.
 
 This model was incorporated on 2023-01-25.Last packaged on 2026-03-10.
 
