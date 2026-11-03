@@ -2,7 +2,8 @@
 
 Scores a molecule against ten G protein-coupled receptors chosen for having the largest ligand sets reported in ChEMBL, covering serotonin, adenosine, dopamine, cannabinoid, histamine and opioid targets, each modelled as a separate regression rather than a classification. The encoder is ImageMol, which learns from rendered pictures of chemical structures and was pretrained on ten million unlabelled molecules. Ersilia carried out the per-receptor fine-tuning, since the authors published the ChEMBL benchmark but not these weights. Coverage mirrors the ligand bias of heavily studied receptors.
 
-This model was incorporated on 2023-01-25.Last packaged on 2026-03-10.
+This model was incorporated on 2023-01-25.
+Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -10,8 +11,8 @@ This model was incorporated on 2023-01-25.Last packaged on 2026-03-10.
 - **Slug:** `image-mol-gpcr`
 
 ### Domain
-- **Task:** `Representation`
-- **Subtask:** `Featurization`
+- **Task:** `Annotation`
+- **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Any`
 - **Target Organism:** `Homo sapiens`
 - **Tags:** `Target identification`, `GPCR`
